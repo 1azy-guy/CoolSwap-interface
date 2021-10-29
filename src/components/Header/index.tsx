@@ -3,8 +3,8 @@ import React from 'react';
 import { Text } from 'rebass';
 import { NavLink } from 'react-router-dom';
 import { darken } from 'polished';
-import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 import Logo from '../../assets/svg/logo.svg';
 import LogoDark from '../../assets/svg/logo_white.svg';
@@ -265,7 +265,7 @@ export default function Header() {
 
       <HeaderLinks>
         <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
-          {t('Swap')}
+          {t('swap')}
         </StyledNavLink>
         <StyledNavLink
           id={`pool-nav-link`}
@@ -278,7 +278,7 @@ export default function Header() {
             pathname.startsWith('/find')
           }
         >
-          {t('Pool')}
+          {t('pool')}
         </StyledNavLink>
       </HeaderLinks>
 
